@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _01_Variables
+namespace _01_BasicsOfProgramming_01_Variables
 {
     class Program
     {

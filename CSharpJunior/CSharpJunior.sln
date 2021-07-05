@@ -8,9 +8,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Practice", "Practice", "{37
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "Practice\Practice.csproj", "{FEF87775-378C-4180-B9DC-C16A4FB5DFF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_Variables", "_01_Variables\_01_Variables.csproj", "{387EA9FB-5696-4527-86BD-8942549393D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_BasicsOfProgramming_01_Variables", "_01_BasicsOfProgramming_01_Variables\_01_BasicsOfProgramming_01_Variables.csproj", "{387EA9FB-5696-4527-86BD-8942549393D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_03_Pictures", "_03_Pictures\_03_Pictures.csproj", "{983A9E30-6AEA-4481-834C-AA2D2CC59705}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_BasicsOfProgramming_03_Pictures", "_01_BasicsOfProgramming_03_Pictures\_01_BasicsOfProgramming_03_Pictures.csproj", "{983A9E30-6AEA-4481-834C-AA2D2CC59705}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_BasicsOfProgramming_04_Store", "_01_BasicsOfProgramming_04_Store\_01_BasicsOfProgramming_04_Store.csproj", "{E4E99BC1-E57D-4723-A55F-43A8A825B32C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,7 @@ Global
 		{FEF87775-378C-4180-B9DC-C16A4FB5DFF4} = {24F50841-1013-4898-A32D-E5E739EC9958}
 		{387EA9FB-5696-4527-86BD-8942549393D5} = {37519CD1-2267-4121-9551-76B418004E43}
 		{983A9E30-6AEA-4481-834C-AA2D2CC59705} = {37519CD1-2267-4121-9551-76B418004E43}
+		{E4E99BC1-E57D-4723-A55F-43A8A825B32C} = {37519CD1-2267-4121-9551-76B418004E43}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FEF87775-378C-4180-B9DC-C16A4FB5DFF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -37,5 +40,9 @@ Global
 		{983A9E30-6AEA-4481-834C-AA2D2CC59705}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{983A9E30-6AEA-4481-834C-AA2D2CC59705}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{983A9E30-6AEA-4481-834C-AA2D2CC59705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4E99BC1-E57D-4723-A55F-43A8A825B32C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4E99BC1-E57D-4723-A55F-43A8A825B32C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4E99BC1-E57D-4723-A55F-43A8A825B32C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4E99BC1-E57D-4723-A55F-43A8A825B32C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
