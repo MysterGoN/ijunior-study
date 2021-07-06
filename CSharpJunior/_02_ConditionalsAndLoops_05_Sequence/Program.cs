@@ -6,7 +6,13 @@ namespace _02_ConditionalsAndLoops_05_Sequence
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            const int maxValue = 100;
+            const int step = 7;
+            
+            for (int i = step; i < maxValue; i += step)
+            {
+                Console.Write($"{i} ");
+            }
         }
     }
 }

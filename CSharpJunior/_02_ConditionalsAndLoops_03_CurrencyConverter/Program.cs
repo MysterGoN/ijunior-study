@@ -6,17 +6,16 @@ namespace _02_ConditionalsAndLoops_03_ConsoleMenu
     {
         static void Main(string[] args)
         {
-            
             const string usdName = "USD";
             const string yenName = "JPY";
             const string rubName = "RUB";
-            
+
             const float usdToRub = 73.43f;
             const float rubToUsd = 0.014f;
 
             const float yenToRub = 0.66f;
             const float rubToYen = 1.51f;
-            
+
             const float yenToUsd = 0.009f;
             const float usdToYen = 110.61f;
 
@@ -39,7 +38,6 @@ namespace _02_ConditionalsAndLoops_03_ConsoleMenu
 
             float amountOfCurrency;
 
-            
             Console.WriteLine("Вы пришли в обменник валют. У нас самые честные курсы обмена!" +
                               "\nТолько сегодня и только сейчас вы можете обменять наши валюты " +
                               $"{listOfCurrencies} по самым выгодным ценам:" +
@@ -58,7 +56,7 @@ namespace _02_ConditionalsAndLoops_03_ConsoleMenu
             yen = Convert.ToSingle(Console.ReadLine());
             Console.Write(availableCurrencyMessage, rubName);
             rub = Convert.ToSingle(Console.ReadLine());
-            
+
             while (true)
             {
                 Console.WriteLine("Вы хотите обменять валюту или выйти?" +
@@ -70,12 +68,12 @@ namespace _02_ConditionalsAndLoops_03_ConsoleMenu
                 {
                     break;
                 }
-                
+
                 Console.WriteLine("У вас на счету сейчас следующие валюты:" +
                                   $"\n\t - {usdName}: {usd}" +
                                   $"\n\t - {yenName}: {yen}" +
                                   $"\n\t - {rubName}: {rub}");
-                
+
                 Console.Write($"Введите валюту, которую хотите обменять {listOfCurrencies}: ");
                 firstCurrency = Console.ReadLine();
 
@@ -84,7 +82,7 @@ namespace _02_ConditionalsAndLoops_03_ConsoleMenu
                     case usdName:
                         Console.Write(amountCurrencyMessage);
                         amountOfCurrency = Convert.ToSingle(Console.ReadLine());
-                        
+
                         Console.Write(secondMessageTemplate, $"({yenName}, {rubName})");
                         secondCurrency = Console.ReadLine();
 
@@ -105,15 +103,14 @@ namespace _02_ConditionalsAndLoops_03_ConsoleMenu
                                 Console.WriteLine(noSuchCurrencyMessage);
                                 break;
                         }
-                        
                         break;
                     case yenName:
                         Console.Write(amountCurrencyMessage);
                         amountOfCurrency = Convert.ToSingle(Console.ReadLine());
-                        
+
                         Console.Write(secondMessageTemplate, $"({usdName}, {rubName})");
                         secondCurrency = Console.ReadLine();
-                        
+
                         switch (secondCurrency)
                         {
                             case usdName:
@@ -135,10 +132,10 @@ namespace _02_ConditionalsAndLoops_03_ConsoleMenu
                     case rubName:
                         Console.Write(amountCurrencyMessage);
                         amountOfCurrency = Convert.ToSingle(Console.ReadLine());
-                        
+
                         Console.Write(secondMessageTemplate, $"({usdName}, {yenName})");
                         secondCurrency = Console.ReadLine();
-                        
+
                         switch (secondCurrency)
                         {
                             case usdName:
@@ -162,7 +159,6 @@ namespace _02_ConditionalsAndLoops_03_ConsoleMenu
                         break;
                 }
             }
-            
             Console.WriteLine("Приходите ещё!");
         }
     }
