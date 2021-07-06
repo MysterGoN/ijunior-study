@@ -51,11 +51,12 @@ namespace _02_ConditionalsAndLoops_03_ConsoleMenu
                               $"\n\t- {usdName} в {yenName} за {usdToYen}");
 
             Console.WriteLine("Сколько валют у вас с собой?");
-            Console.Write($"Введите количество {usdName} взятые с собой: ");
+            string availableCurrencyMessage = "Введите количество {0} взятые с собой: ";
+            Console.Write(availableCurrencyMessage, usdName);
             usd = Convert.ToSingle(Console.ReadLine());
-            Console.Write($"Введите количество {yenName} взятые с собой: ");
+            Console.Write(availableCurrencyMessage, yenName);
             yen = Convert.ToSingle(Console.ReadLine());
-            Console.Write($"Введите количество {rubName} взятые с собой: ");
+            Console.Write(availableCurrencyMessage, rubName);
             rub = Convert.ToSingle(Console.ReadLine());
             
             while (true)
