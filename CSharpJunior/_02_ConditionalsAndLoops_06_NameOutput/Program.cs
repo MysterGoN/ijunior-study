@@ -17,7 +17,7 @@ namespace _02_ConditionalsAndLoops_06_NameOutput
             name = Console.ReadLine();
             
             Console.WriteLine("Какой орнамент вы выберете?");
-            Console.Write("Введите символ (Можно ввести строку, но учтен будет только первый): ");
+            Console.Write("Введите символ (Можно ввести строку, но учтен будет только первый символ): ");
             ornament = Console.ReadLine()[0];
 
             int nameLength = name.Length;
