@@ -68,7 +68,7 @@ namespace _02_ConditionalsAndLoops_08_BossFight
                 battleInfo = "";
                 if (isStaticShieldActive)
                 {
-                    staticShieldActivity -= 1;
+                    staticShieldActivity--;
                     if (staticShieldActivity <= 0)
                     {
                         isStaticShieldActive = false;
@@ -78,7 +78,7 @@ namespace _02_ConditionalsAndLoops_08_BossFight
 
                 if (isElectrificationActive)
                 {
-                    electrificationActivity -= 1;
+                    electrificationActivity--;
                     if (electrificationActivity <= 0)
                     {
                         isElectrificationActive = false;
