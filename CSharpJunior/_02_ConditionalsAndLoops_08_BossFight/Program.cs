@@ -190,7 +190,7 @@ namespace _02_ConditionalsAndLoops_08_BossFight
                     if (staticShieldHealth - bossDamage > 0)
                     {
                         staticShieldHealth -= bossDamage;
-                        battleInfo += $"\n\t- Вам нанесли {bossDamage} урона но он был поглащён {staticShieldActionName} " +
+                        battleInfo += $"\n\t- Вам нанесли {bossDamage} урона но он был поглощён {staticShieldActionName} " +
                                       $"у него осталось {staticShieldHealth} хп.";
                     }
                     else
