@@ -28,7 +28,6 @@ namespace _03_Arrays_04_DynamicArray
                     Console.WriteLine($"\n\nИнформация:\n  {message}");
                     message = null;
                 }
-                Console.WriteLine("\n");
                 Console.SetCursorPosition(0, cursorPositionTop + arrayDownPosition);
                 
                 Console.Write("Числа в массиве:");
@@ -41,14 +40,14 @@ namespace _03_Arrays_04_DynamicArray
                 string userInput = Console.ReadLine();
                 if (int.TryParse(userInput, out int newNumber))
                 {
-                    int[] tmpNumbers = new int[numbers.Length + 1];
+                    int[] tempNumbers = new int[numbers.Length + 1];
                     for (int i = 0; i < numbers.Length; i++)
                     {
-                        tmpNumbers[i] = numbers[i];
+                        tempNumbers[i] = numbers[i];
                     }
 
-                    tmpNumbers[tmpNumbers.Length - 1] = newNumber;
-                    numbers = tmpNumbers;
+                    tempNumbers[tempNumbers.Length - 1] = newNumber;
+                    numbers = tempNumbers;
                     message = $"В конец массива было добавлено число {newNumber}";
                     continue;
                 }
