@@ -41,12 +41,9 @@ namespace _03_Arrays_03_LocalMax
                         Console.Write($" {numbers[i]}");
                     }
                 }
-                else
+                else if (numbers[i] >= numbers[i - 1] && numbers[i] >= numbers[i + 1])
                 {
-                    if (numbers[i] >= numbers[i - 1] && numbers[i] >= numbers[i + 1])
-                    {
-                        Console.Write($" {numbers[i]}");
-                    }
+                    Console.Write($" {numbers[i]}");
                 }
             }
         }
