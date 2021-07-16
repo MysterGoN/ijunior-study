@@ -16,11 +16,7 @@ namespace _04_Functions_01_PersonnelAccounting
             string[] fullNames = new string[0];
             string[] positions = new string[0];
             bool canExit = false;
-            bool canShowDossiers = false;
-            int messagePositionLeft = 0, messagePositionTop = 10;
             int dossiersPositionLeft = 40, dossiersPositionTop = 0;
-            string message = null;
-            string userInput;
 
             while (!canExit)
             {
@@ -34,20 +30,10 @@ namespace _04_Functions_01_PersonnelAccounting
                                   $"\n  {exitMenuCode} - выход");
 
                 Console.Write("\nВведите команду: ");
-                if (IsMessageExists(message))
-                {
-                    DrawMessage(message, messagePositionLeft, messagePositionTop);
-                    message = null;
-                }
-
-                if (canShowDossiers)
-                {
-                    ShowDossiers(fullNames, positions, dossiersPositionLeft, dossiersPositionTop);
-                    canShowDossiers = false;
-                }
 
                 char userInputCode = Console.ReadKey().KeyChar;
-                Console.WriteLine();
+                Console.WriteLine("\n");
+                string userInput;
                 switch (userInputCode)
                 {
                     case addDossierCode:
@@ -56,45 +42,44 @@ namespace _04_Functions_01_PersonnelAccounting
                         Console.Write("Введите должность: ");
                         string position = Console.ReadLine();
                         AddDossier(ref fullNames, ref positions, fullName, position);
-                        message = $"Было добавлено досье {fullName} - {position}";
+                        Console.WriteLine($"Досье {fullName} - {position} было добавлено успешно");
                         break;
                     case showAllDossiersCode:
-                        canShowDossiers = true;
+                        ShowDossiers(fullNames, positions, dossiersPositionLeft, dossiersPositionTop);
                         break;
                     case deleteDossierCode:
                         ShowDossiers(fullNames, positions, dossiersPositionLeft, dossiersPositionTop);
                         Console.Write("Введите номер досье для удаления: ");
                         userInput = Console.ReadLine();
-                        if (!IsDossierExists(userInput, out int dossierPosition, fullNames))
+                        if (IsDossierExists(userInput, out int dossierPosition, fullNames))
                         {
-                            message = $"Нет досье под номером: {userInput}";
-                            continue;
+                            DeleteDossier(ref fullNames, ref positions, dossierPosition);
+                            Console.WriteLine($"Досье под номером {dossierPosition} удалено успешно");
                         }
-                        DeleteDossier(ref fullNames, ref positions, dossierPosition);
+                        else
+                        {
+                            Console.WriteLine($"Нет досье под номером: {userInput}");
+                        }
                         break;
                     case searchByNameCode:
                         Console.Write("Введите ФИО: ");
                         userInput = Console.ReadLine();
-                        int[] dossierPositions = SearchDossiersByFullName(ref fullNames, userInput);
-                        message = GenerateFoundDossiersMessage(ref fullNames, ref positions, dossierPositions);
+                        SearchDossiersByFullName(ref fullNames, ref positions, userInput);
                         break;
                     case generateDossiersCode:
                         GenerateDossiersData(ref fullNames, ref positions);
-                        message = "В массивы были добавлены заготовленные данные";
+                        Console.WriteLine("Заготовленные данные были успешно добавлены");
                         break;
                     case exitMenuCode:
                         canExit = true;
                         break;
                     default:
-                        message = $"Нет такого пункта меню!";
+                        Console.WriteLine("Нет такого пункта меню!");
                         break;
                 }
+                Console.Write("\nДля продолжения нажмите любую клавишу...");
+                Console.ReadKey();
             }
-        }
-
-        static bool IsMessageExists(string message)
-        {
-            return message != null && message.Length > 0;
         }
 
         static bool IsDossierExists(string userInput, out int dossierNumber, string[] dossierArray)
@@ -103,16 +88,6 @@ namespace _04_Functions_01_PersonnelAccounting
             return int.TryParse(userInput, out dossierNumber) && 
                    dossierNumber >= 1 && 
                    dossierNumber <= dossierArray.Length;
-        }
-
-        static void DrawMessage(string message, int positionLeft, int positionTop)
-        {
-            (int cursorPositionLeft, int cursorPositionTop) = Console.GetCursorPosition();
-            Console.SetCursorPosition(positionLeft, positionTop);
-
-            Console.WriteLine($"\n\nИнформация:\n  {message}");
-
-            Console.SetCursorPosition(cursorPositionLeft, cursorPositionTop);
         }
 
         static void AddElementToArray(ref string[] array, string newElement)
@@ -126,19 +101,7 @@ namespace _04_Functions_01_PersonnelAccounting
             tempArray[^1] = newElement;
             array = tempArray;
         }
-        
-        static void AddElementToArray(ref int[] array, int newElement)
-        {
-            int[] tempArray = new int[array.Length + 1];
-            for (int i = 0; i < array.Length; i++)
-            {
-                tempArray[i] = array[i];
-            }
 
-            tempArray[^1] = newElement;
-            array = tempArray;
-        }
-        
         static void DeleteElementFromArray(ref string[] array, int elementPosition)
         {
             string[] tempArray = new string[array.Length - 1];
@@ -184,30 +147,15 @@ namespace _04_Functions_01_PersonnelAccounting
             Console.SetCursorPosition(cursorPositionLeft, cursorPositionTop);
         }
 
-        static int[] SearchDossiersByFullName(ref string[] fullNames, string userInput)
+        static void SearchDossiersByFullName(ref string[] fullNames, ref string[] positions, string userInput)
         {
-            int[] dossierPositions = new int[0];
             for (int i = 0; i < fullNames.Length; i++)
             {
                 if (fullNames[i].Contains(userInput))
                 {
-                    AddElementToArray(ref dossierPositions, i);
+                    Console.WriteLine($"  {fullNames[i]} - {positions[i]}");
                 }
             }
-
-            return dossierPositions;
-        }
-
-        static string GenerateFoundDossiersMessage(ref string[] fullNames, ref string[] positions, 
-            int[] dossierPositions)
-        {
-            string message = "Найденные досье: ";
-            foreach (int dossierPosition in dossierPositions)
-            {
-                message += $"\n    {fullNames[dossierPosition]} - {positions[dossierPosition]}";
-            }
-
-            return message;
         }
 
         static void GenerateDossiersData(ref string[] fullNames, ref string[] positions)
