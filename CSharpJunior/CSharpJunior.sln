@@ -62,7 +62,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_04_Functions_03_ReadInt", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_04_Functions_04_BraveNewWorld", "_04_Functions_04_BraveNewWorld\_04_Functions_04_BraveNewWorld.csproj", "{95CD30C1-3DFE-4963-9408-0828F2ABFEC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_04_Functions_05_KsnsasCityShuffle", "_04_Functions_05_KsnsasCityShuffle\_04_Functions_05_KsnsasCityShuffle.csproj", "{AE426CFC-C468-427D-96AB-063F854F7C05}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_04_Functions_05_KansasCityShuffle", "_04_Functions_05_KansasCityShuffle\_04_Functions_05_KansasCityShuffle.csproj", "{AE426CFC-C468-427D-96AB-063F854F7C05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
