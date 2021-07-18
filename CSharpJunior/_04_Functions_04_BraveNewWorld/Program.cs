@@ -6,8 +6,11 @@ namespace _04_Functions_04_BraveNewWorld
     {
         static void Main(string[] args)
         {
-            const int leftDirection = 0;
-            const int rightDirection = 0;
+            bool isPlaying = true;
+            int heroPositionX = 1;
+            int heroPositionY = 1;
+            int heroDirectionX = 0;
+            int heroDirectionY = 0;
             
             char[,] map = 
             {
@@ -24,23 +27,45 @@ namespace _04_Functions_04_BraveNewWorld
             };
 
             Console.CursorVisible = false;
-            while (true)
+            Console.Clear();
+            DrawMap(map);
+            
+            while (isPlaying)
             {
-                Console.Clear();
-                DrawMap(map);
-
-                switch (Console.ReadKey().Key)
+                switch (Console.ReadKey(true).Key)
                 {
                     case ConsoleKey.UpArrow:
+                        heroDirectionX = -1;
+                        heroDirectionY = 0;
                         break;
                     case ConsoleKey.RightArrow:
+                        heroDirectionX = 0;
+                        heroDirectionY = 1;
                         break;
                     case ConsoleKey.DownArrow:
+                        heroDirectionX = 1;
+                        heroDirectionY = 0;
                         break;
                     case ConsoleKey.LeftArrow:
+                        heroDirectionX = 0;
+                        heroDirectionY = -1;
+                        break;
+                }
+
+                switch (map[heroPositionX + heroDirectionX, heroPositionY + heroDirectionY])
+                {
+                    case ' ':
+                        MoveHero(ref heroPositionX, ref heroPositionY, heroDirectionX, heroDirectionY);
+                        break;
+                    case '!':
+                        MoveHero(ref heroPositionX, ref heroPositionY, heroDirectionX, heroDirectionY);
+                        isPlaying = false;
                         break;
                 }
             }
+            
+            Console.Clear();
+            Console.WriteLine("Ура! Ты сумел найти выход из лабиринта!");
         }
 
         static void DrawMap(char[,] map)
@@ -53,6 +78,16 @@ namespace _04_Functions_04_BraveNewWorld
                 }
                 Console.WriteLine();
             }
+        }
+
+        static void MoveHero(ref int heroPositionX, ref int heroPositionY, int heroDirectionX, int heroDirectionY)
+        {
+            Console.SetCursorPosition(heroPositionY, heroPositionX);
+            Console.Write(' ');
+            heroPositionX += heroDirectionX;
+            heroPositionY += heroDirectionY;
+            Console.SetCursorPosition(heroPositionY, heroPositionX);
+            Console.Write('@');
         }
     }
 }
