@@ -29,6 +29,12 @@ namespace _04_Functions_04_BraveNewWorld
             Console.CursorVisible = false;
             Console.Clear();
             DrawMap(map);
+            Console.WriteLine("\nТвоя главная цель выйти из лабиринта и добраться до '!'");
+            Console.WriteLine("\nУправление:" +
+                              $"\n  {ConsoleKey.UpArrow} - движение вверх" +
+                              $"\n  {ConsoleKey.DownArrow} - движение вниз" +
+                              $"\n  {ConsoleKey.RightArrow} - движение вправо" +
+                              $"\n  {ConsoleKey.LeftArrow} - движение влево");
             
             while (isPlaying)
             {
