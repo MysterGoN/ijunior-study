@@ -16,8 +16,9 @@ namespace _05_Collections_01_Dictionary
                 {"target", "цель"},
                 {"book", "книга"}
             };
+            bool canExit = false;
 
-            while (true)
+            while (!canExit)
             {
                 Console.Clear();
                 Console.WriteLine("Перед вами Англо-русский словарь. Введите слово на английском, " +
@@ -28,7 +29,8 @@ namespace _05_Collections_01_Dictionary
 
                 if (exitWord.Equals(word))
                 {
-                    break;
+                    canExit = true;
+                    continue;
                 }
 
                 if (word != null && englishRussianDictionary.TryGetValue(word, out string translation))
