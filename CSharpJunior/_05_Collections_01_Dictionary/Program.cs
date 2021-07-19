@@ -26,7 +26,7 @@ namespace _05_Collections_01_Dictionary
                 Console.Write($"Введите слово для перевода или '{exitWord}': ");
                 string word = Console.ReadLine();
 
-                if (word == exitWord)
+                if (exitWord.Equals(word))
                 {
                     break;
                 }
