@@ -104,6 +104,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_06_OOP_11_CarService", "_0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_BasicsOfProgramming_05_SwitchValues", "_01_BasicsOfProgramming_05_SwitchValues\_01_BasicsOfProgramming_05_SwitchValues.csproj", "{D175D320-5A66-4A79-B991-893F92527A7E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02_ConditionalsAndLoops_04_SumOfNumbers", "_02_ConditionalsAndLoops_04_SumOfNumbers\_02_ConditionalsAndLoops_04_SumOfNumbers.csproj", "{5152D66A-C39A-4D73-ACCE-21D318F78C93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -156,6 +158,7 @@ Global
 		{04E5F118-90AF-467E-9369-DD9DFE5D556A} = {2B7D217F-A3F6-4891-AFCF-FC177F65F66D}
 		{CF199837-ADBC-48FE-9037-8A3A05271A04} = {2B7D217F-A3F6-4891-AFCF-FC177F65F66D}
 		{D175D320-5A66-4A79-B991-893F92527A7E} = {37519CD1-2267-4121-9551-76B418004E43}
+		{5152D66A-C39A-4D73-ACCE-21D318F78C93} = {804A220B-39BE-4CC3-9EE8-386DC6FF7231}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FEF87775-378C-4180-B9DC-C16A4FB5DFF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -314,5 +317,9 @@ Global
 		{D175D320-5A66-4A79-B991-893F92527A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D175D320-5A66-4A79-B991-893F92527A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D175D320-5A66-4A79-B991-893F92527A7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5152D66A-C39A-4D73-ACCE-21D318F78C93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5152D66A-C39A-4D73-ACCE-21D318F78C93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5152D66A-C39A-4D73-ACCE-21D318F78C93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5152D66A-C39A-4D73-ACCE-21D318F78C93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
