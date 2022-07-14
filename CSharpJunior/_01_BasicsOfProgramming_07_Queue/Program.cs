@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _01_BasicsOfProgramming_05_Queue
+namespace _01_BasicsOfProgramming_07_Queue
 {
     class Program
     {

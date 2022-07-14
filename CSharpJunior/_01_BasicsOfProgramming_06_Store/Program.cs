@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _01_BasicsOfProgramming_04_Store
+namespace _01_BasicsOfProgramming_06_Store
 {
     class Program
     {

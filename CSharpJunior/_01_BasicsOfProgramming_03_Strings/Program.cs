@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _01_BasicsOfProgramming_06_Strings
+namespace _01_BasicsOfProgramming_03_Strings
 {
     class Program
     {

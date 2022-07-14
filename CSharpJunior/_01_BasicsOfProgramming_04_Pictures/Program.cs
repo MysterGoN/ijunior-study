@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _01_BasicsOfProgramming_03_Pictures
+namespace _01_BasicsOfProgramming_04_Pictures
 {
     class Program
     {

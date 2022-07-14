@@ -10,13 +10,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "Practice\Practi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_BasicsOfProgramming_01_Variables", "_01_BasicsOfProgramming_01_Variables\_01_BasicsOfProgramming_01_Variables.csproj", "{387EA9FB-5696-4527-86BD-8942549393D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_BasicsOfProgramming_03_Pictures", "_01_BasicsOfProgramming_03_Pictures\_01_BasicsOfProgramming_03_Pictures.csproj", "{983A9E30-6AEA-4481-834C-AA2D2CC59705}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_BasicsOfProgramming_04_Pictures", "_01_BasicsOfProgramming_04_Pictures\_01_BasicsOfProgramming_04_Pictures.csproj", "{983A9E30-6AEA-4481-834C-AA2D2CC59705}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_BasicsOfProgramming_04_Store", "_01_BasicsOfProgramming_04_Store\_01_BasicsOfProgramming_04_Store.csproj", "{E4E99BC1-E57D-4723-A55F-43A8A825B32C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_BasicsOfProgramming_06_Store", "_01_BasicsOfProgramming_06_Store\_01_BasicsOfProgramming_06_Store.csproj", "{E4E99BC1-E57D-4723-A55F-43A8A825B32C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_BasicsOfProgramming_05_Queue", "_01_BasicsOfProgramming_05_Queue\_01_BasicsOfProgramming_05_Queue.csproj", "{DA55011C-BAD0-45D3-8A50-3D9CC70C3807}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_BasicsOfProgramming_07_Queue", "_01_BasicsOfProgramming_07_Queue\_01_BasicsOfProgramming_07_Queue.csproj", "{DA55011C-BAD0-45D3-8A50-3D9CC70C3807}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_BasicsOfProgramming_06_Strings", "_01_BasicsOfProgramming_06_Strings\_01_BasicsOfProgramming_06_Strings.csproj", "{A5F15D66-BCF8-471A-920D-4E57E2E792AD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_BasicsOfProgramming_03_Strings", "_01_BasicsOfProgramming_03_Strings\_01_BasicsOfProgramming_03_Strings.csproj", "{A5F15D66-BCF8-471A-920D-4E57E2E792AD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02_ConditionalsAndLoops", "02_ConditionalsAndLoops", "{C646D370-5B3D-4A3C-9D1C-31FF762343A2}"
 EndProject
