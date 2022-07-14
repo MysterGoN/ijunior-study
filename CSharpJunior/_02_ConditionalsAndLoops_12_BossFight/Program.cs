@@ -169,7 +169,6 @@ namespace _02_ConditionalsAndLoops_08_BossFight
                                   $"\n\t{electrificationActionName} - накладывает дебаф на противника. " +
                                   $"Весь входящий урон увеличивается на {electrificationCoefficientActive}.";
                         continue;
-                        break;
                     default:
                         message = noSuchActionMessage;
                         continue;
