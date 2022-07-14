@@ -110,6 +110,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02_ConditionalsAndLoops_09
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02_ConditionalsAndLoops_10_PowerOfTwo", "_02_ConditionalsAndLoops_10_PowerOfTwo\_02_ConditionalsAndLoops_10_PowerOfTwo.csproj", "{5044F589-9CD6-4676-8C49-A9835F64E687}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02_ConditionalsAndLoops_11_BracketExpression", "_02_ConditionalsAndLoops_11_BracketExpression\_02_ConditionalsAndLoops_11_BracketExpression.csproj", "{7B6EABF0-8A27-4560-ADD1-86971EE7F650}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +167,7 @@ Global
 		{5152D66A-C39A-4D73-ACCE-21D318F78C93} = {804A220B-39BE-4CC3-9EE8-386DC6FF7231}
 		{1838FCA5-0D20-4975-B73F-EB9FA971CC44} = {804A220B-39BE-4CC3-9EE8-386DC6FF7231}
 		{5044F589-9CD6-4676-8C49-A9835F64E687} = {804A220B-39BE-4CC3-9EE8-386DC6FF7231}
+		{7B6EABF0-8A27-4560-ADD1-86971EE7F650} = {804A220B-39BE-4CC3-9EE8-386DC6FF7231}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FEF87775-378C-4180-B9DC-C16A4FB5DFF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -335,5 +338,9 @@ Global
 		{5044F589-9CD6-4676-8C49-A9835F64E687}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5044F589-9CD6-4676-8C49-A9835F64E687}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5044F589-9CD6-4676-8C49-A9835F64E687}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B6EABF0-8A27-4560-ADD1-86971EE7F650}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B6EABF0-8A27-4560-ADD1-86971EE7F650}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B6EABF0-8A27-4560-ADD1-86971EE7F650}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B6EABF0-8A27-4560-ADD1-86971EE7F650}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
