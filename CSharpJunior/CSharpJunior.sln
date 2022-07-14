@@ -26,17 +26,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02_ConditionalsAndLoops_01
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02_ConditionalsAndLoops_02_ExitControl", "_02_ConditionalsAndLoops_02_ExitControl\_02_ConditionalsAndLoops_02_ExitControl.csproj", "{599DB632-945D-4989-AEB2-5678B7F29B98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02_ConditionalsAndLoops_03_CurrencyConverter", "_02_ConditionalsAndLoops_03_CurrencyConverter\_02_ConditionalsAndLoops_03_CurrencyConverter.csproj", "{C55ACEDE-E5E8-42AB-AA9F-5705BC6C46A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02_ConditionalsAndLoops_05_CurrencyConverter", "_02_ConditionalsAndLoops_05_CurrencyConverter\_02_ConditionalsAndLoops_05_CurrencyConverter.csproj", "{C55ACEDE-E5E8-42AB-AA9F-5705BC6C46A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02_ConditionalsAndLoops_04_ConsoleMenu", "_02_ConditionalsAndLoops_04_ConsoleMenu\_02_ConditionalsAndLoops_04_ConsoleMenu.csproj", "{B91035C6-53AF-4093-B848-DC7AEE6FC934}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02_ConditionalsAndLoops_06_ConsoleMenu", "_02_ConditionalsAndLoops_06_ConsoleMenu\_02_ConditionalsAndLoops_06_ConsoleMenu.csproj", "{B91035C6-53AF-4093-B848-DC7AEE6FC934}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02_ConditionalsAndLoops_05_Sequence", "_02_ConditionalsAndLoops_05_Sequence\_02_ConditionalsAndLoops_05_Sequence.csproj", "{B7B2E4A4-42AC-41C9-8C6E-22262316952A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02_ConditionalsAndLoops_03_Sequence", "_02_ConditionalsAndLoops_03_Sequence\_02_ConditionalsAndLoops_03_Sequence.csproj", "{B7B2E4A4-42AC-41C9-8C6E-22262316952A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02_ConditionalsAndLoops_06_NameOutput", "_02_ConditionalsAndLoops_06_NameOutput\_02_ConditionalsAndLoops_06_NameOutput.csproj", "{CDC8956A-2A4F-41F4-B8C7-46580694B201}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02_ConditionalsAndLoops_07_NameOutput", "_02_ConditionalsAndLoops_07_NameOutput\_02_ConditionalsAndLoops_07_NameOutput.csproj", "{CDC8956A-2A4F-41F4-B8C7-46580694B201}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02_ConditionalsAndLoops_07_PasswordProgram", "_02_ConditionalsAndLoops_07_PasswordProgram\_02_ConditionalsAndLoops_07_PasswordProgram.csproj", "{23A02A6D-DDD2-4B3F-9A25-F3AAF21E9121}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02_ConditionalsAndLoops_08_PasswordProgram", "_02_ConditionalsAndLoops_08_PasswordProgram\_02_ConditionalsAndLoops_08_PasswordProgram.csproj", "{23A02A6D-DDD2-4B3F-9A25-F3AAF21E9121}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02_ConditionalsAndLoops_08_BossFight", "_02_ConditionalsAndLoops_08_BossFight\_02_ConditionalsAndLoops_08_BossFight.csproj", "{8EE343A0-CB5B-4C7C-B568-5E09C931E7CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02_ConditionalsAndLoops_12_BossFight", "_02_ConditionalsAndLoops_12_BossFight\_02_ConditionalsAndLoops_12_BossFight.csproj", "{8EE343A0-CB5B-4C7C-B568-5E09C931E7CA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03_Arrays", "03_Arrays", "{CC93711E-B155-4BD7-9D6E-ED7BDB46511A}"
 EndProject

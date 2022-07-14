@@ -3,6 +3,7 @@
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net5.0</TargetFramework>
+        <RootNamespace>_02_ConditionalsAndLoops_05_Sequence</RootNamespace>
     </PropertyGroup>
 
 </Project>
