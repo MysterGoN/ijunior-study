@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_BasicsOfProgramming", "01_BasicsOfProgramming", "{7E287A51-DDD8-41E4-9A72-F06E19475640}"
 EndProject
@@ -114,6 +114,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02_ConditionalsAndLoops_11
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_03_Arrays_05_Subarray", "_03_Arrays_05_Subarray\_03_Arrays_05_Subarray.csproj", "{3E6BA4D7-F3DD-49B7-8D38-DC163167C796}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_03_Arrays_06_NumbersSorting", "_03_Arrays_06_NumbersSorting\_03_Arrays_06_NumbersSorting.csproj", "{3477F1AE-8B8E-4BF2-8772-B6CC9DA0009E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -171,6 +173,7 @@ Global
 		{5044F589-9CD6-4676-8C49-A9835F64E687} = {804A220B-39BE-4CC3-9EE8-386DC6FF7231}
 		{7B6EABF0-8A27-4560-ADD1-86971EE7F650} = {804A220B-39BE-4CC3-9EE8-386DC6FF7231}
 		{3E6BA4D7-F3DD-49B7-8D38-DC163167C796} = {E8ECD51B-9F79-4AFC-BADD-1900EB066D37}
+		{3477F1AE-8B8E-4BF2-8772-B6CC9DA0009E} = {E8ECD51B-9F79-4AFC-BADD-1900EB066D37}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FEF87775-378C-4180-B9DC-C16A4FB5DFF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -349,5 +352,9 @@ Global
 		{3E6BA4D7-F3DD-49B7-8D38-DC163167C796}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E6BA4D7-F3DD-49B7-8D38-DC163167C796}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E6BA4D7-F3DD-49B7-8D38-DC163167C796}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3477F1AE-8B8E-4BF2-8772-B6CC9DA0009E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3477F1AE-8B8E-4BF2-8772-B6CC9DA0009E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3477F1AE-8B8E-4BF2-8772-B6CC9DA0009E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3477F1AE-8B8E-4BF2-8772-B6CC9DA0009E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
