@@ -24,18 +24,10 @@ namespace _02_ConditionalsAndLoops_10_PowerOfTwo
             
             int totalPower = 1;
             int resultOfExponentiation = numberToExponentiate;
-            bool canExit = false;
-            while (!canExit)
+            while (resultOfExponentiation <= randomNumber)
             {
-                if (resultOfExponentiation > randomNumber)
-                {
-                    canExit = true;
-                }
-                else
-                {
-                    resultOfExponentiation *= numberToExponentiate;
-                    totalPower++;
-                }
+                resultOfExponentiation *= numberToExponentiate;
+                totalPower++;
             }
             
             Console.WriteLine($"- Cтепень равна: {totalPower}, а число {resultOfExponentiation}. " +
