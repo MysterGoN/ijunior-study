@@ -120,6 +120,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_03_Arrays_07_Split", "_03_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_03_Arrays_08_Shift", "_03_Arrays_08_Shift\_03_Arrays_08_Shift.csproj", "{0E4234ED-21A6-42CC-9800-20A7AD2B1A19}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_05_Collections_05_MergeIntoOneCollection", "_05_Collections_05_MergeIntoOneCollection\_05_Collections_05_MergeIntoOneCollection.csproj", "{DDD48C2C-8538-421C-99BA-AA85D24BB650}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -180,6 +182,7 @@ Global
 		{3477F1AE-8B8E-4BF2-8772-B6CC9DA0009E} = {E8ECD51B-9F79-4AFC-BADD-1900EB066D37}
 		{3675690F-BC51-4C0A-A8D9-3C5F74C5DA25} = {E8ECD51B-9F79-4AFC-BADD-1900EB066D37}
 		{0E4234ED-21A6-42CC-9800-20A7AD2B1A19} = {E8ECD51B-9F79-4AFC-BADD-1900EB066D37}
+		{DDD48C2C-8538-421C-99BA-AA85D24BB650} = {8709730A-3434-40E6-9A76-783E42D16351}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FEF87775-378C-4180-B9DC-C16A4FB5DFF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -370,5 +373,9 @@ Global
 		{0E4234ED-21A6-42CC-9800-20A7AD2B1A19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E4234ED-21A6-42CC-9800-20A7AD2B1A19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E4234ED-21A6-42CC-9800-20A7AD2B1A19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDD48C2C-8538-421C-99BA-AA85D24BB650}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDD48C2C-8538-421C-99BA-AA85D24BB650}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDD48C2C-8538-421C-99BA-AA85D24BB650}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDD48C2C-8538-421C-99BA-AA85D24BB650}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
