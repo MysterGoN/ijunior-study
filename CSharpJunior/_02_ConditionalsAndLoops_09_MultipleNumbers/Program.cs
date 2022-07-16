@@ -8,8 +8,8 @@ namespace _02_ConditionalsAndLoops_09_MultipleNumbers
         {
             Random random = new Random();
 
-            int minThreeDigitsNumber = 100;
-            int maxThreeDigitsNumber = 999;
+            int minSearchNumber = 100;
+            int maxSearchNumber = 999;
             int minRandomNumber = 1;
             int maxRandomNumber = 27;
 
@@ -24,16 +24,16 @@ namespace _02_ConditionalsAndLoops_09_MultipleNumbers
             Console.WriteLine($"{randomNumber} - сказал кто-то из темноты.\n" +
                               "Ну началось, подумал я и начал считать.");
 
-            int threeDigitsNumbersCount = 0;
-            for (int i = 0; i <= maxThreeDigitsNumber; i += randomNumber)
+            int searchNumbersCount = 0;
+            for (int i = 0; i <= maxSearchNumber; i += randomNumber)
             {
-                if (i >= minThreeDigitsNumber)
+                if (i >= minSearchNumber)
                 {
-                    threeDigitsNumbersCount++;
+                    searchNumbersCount++;
                 }
             }
 
-            Console.WriteLine($"{threeDigitsNumbersCount} - с трудом выдавил я. " +
+            Console.WriteLine($"{searchNumbersCount} - с трудом выдавил я. " +
                               "И из темноты послышалось \"Правльно!\". Я с облегчением выдохнул " +
                               "и стал ждать продолжения пытки.");
         }

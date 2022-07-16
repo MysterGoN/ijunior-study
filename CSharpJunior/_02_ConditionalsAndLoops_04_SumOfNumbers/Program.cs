@@ -8,8 +8,8 @@ namespace _02_ConditionalsAndLoops_04_SumOfNumbers
         {
             int minNumber = 0;
             int maxNumber = 100;
-            int multipleOfThree = 3;
-            int multipleOfFive = 5;
+            int firstMultiple = 3;
+            int secondMultiple = 5;
 
             Random random = new Random();
             Console.WriteLine("Вы гуляете по заброшенному замку и заходите в одну из комнат. " +
@@ -20,7 +20,7 @@ namespace _02_ConditionalsAndLoops_04_SumOfNumbers
 
             Console.WriteLine($"Вы взяли шар и потрясли его, и внутри него появилось число: {randomNumber}.");
 
-            if (randomNumber < multipleOfThree)
+            if (randomNumber < firstMultiple)
             {
                 Console.WriteLine("Шар еще какое-то время показывал число и потух, больше ничего не происходило. " +
                                   "И вы без какого либо интереса положили шар на место и пошли дальше.");
@@ -32,9 +32,9 @@ namespace _02_ConditionalsAndLoops_04_SumOfNumbers
                               "появляться странные символы... Что бы все это могло значить?");
 
             int totalSum = 0;
-            for (int i = multipleOfThree; i <= randomNumber; i++)
+            for (int i = firstMultiple; i <= randomNumber; i++)
             {
-                if (i % multipleOfThree == 0 || i % multipleOfFive == 0)
+                if (i % firstMultiple == 0 || i % secondMultiple == 0)
                 {
                     totalSum += i;
                 }

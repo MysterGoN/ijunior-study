@@ -10,6 +10,7 @@ namespace _02_ConditionalsAndLoops_10_PowerOfTwo
             
             int minRandomNumber = 0;
             int maxRandomNumber = 10000;
+            int numberToExponentiate = 2;
             
             Console.WriteLine("- Коллега, а давайте с вами поиграем в игру, я назову вам число, " +
                               "а вам нужно бдует найти ближайшее большее число, которое при этом еще " +
@@ -20,24 +21,24 @@ namespace _02_ConditionalsAndLoops_10_PowerOfTwo
             int randomNumber = random.Next(minRandomNumber, maxRandomNumber + 1);
             
             Console.WriteLine($"- Хм... дай как подумать, как на счет - {randomNumber}?");
-
-            int power = 1;
-            int powerOfTwo = 2;
+            
+            int totalPower = 1;
+            int resultOfExponentiation = numberToExponentiate;
             bool canExit = false;
             while (!canExit)
             {
-                if (powerOfTwo > randomNumber)
+                if (resultOfExponentiation > randomNumber)
                 {
                     canExit = true;
                 }
                 else
                 {
-                    powerOfTwo *= 2;
-                    power++;
+                    resultOfExponentiation *= numberToExponentiate;
+                    totalPower++;
                 }
             }
             
-            Console.WriteLine($"- Cтепень равна: {power}, а число {powerOfTwo}. " +
+            Console.WriteLine($"- Cтепень равна: {totalPower}, а число {resultOfExponentiation}. " +
                               "- Недолго думая ответил я.");
             
         }
