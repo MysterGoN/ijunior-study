@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace _06_OOP_04_Store
+namespace _06_OOP_06_Store
 {
     class Program
     {

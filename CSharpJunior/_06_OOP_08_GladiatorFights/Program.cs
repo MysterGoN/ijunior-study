@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _06_OOP_06_GladiatorFights
+namespace _06_OOP_08_GladiatorFights
 {
     class Program
     {

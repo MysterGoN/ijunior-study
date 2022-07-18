@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _06_OOP_09_Aquarium
+namespace _06_OOP_11_Aquarium
 {
     class Program
     {

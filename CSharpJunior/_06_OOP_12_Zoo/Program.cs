@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _06_OOP_10_Zoo
+namespace _06_OOP_12_Zoo
 {
     class Program
     {

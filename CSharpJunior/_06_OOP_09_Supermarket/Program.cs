@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _06_OOP_07_Supermarket
+namespace _06_OOP_09_Supermarket
 {
     class Program
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _06_OOP_08_TheWar
+namespace _06_OOP_10_TheWar
 {
     class Program
     {

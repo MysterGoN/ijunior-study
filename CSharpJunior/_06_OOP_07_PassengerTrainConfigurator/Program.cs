@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _06_OOP_05_PassengerTrainConfigurator
+namespace _06_OOP_07_PassengerTrainConfigurator
 {
     class Program
     {
