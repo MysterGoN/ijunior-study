@@ -29,8 +29,7 @@ namespace _06_OOP_05_BookStorage
             string bookName = Console.ReadLine();
             Console.Write("Введите автора: ");
             string bookAuthor = Console.ReadLine();
-            Console.Write("Введите год: ");
-            int bookYearOfPublication = Convert.ToInt32(Console.ReadLine());
+            int bookYearOfPublication = ReadNumber("Введите год: ");
 
             boxOfBooks.Add(new Book(bookName, bookAuthor, bookYearOfPublication));
 
@@ -42,10 +41,28 @@ namespace _06_OOP_05_BookStorage
             boxOfBooks.ShowBooksByName(Console.ReadLine());
             Console.Write("\nВведите автора: ");
             boxOfBooks.ShowBooksByAuthor(Console.ReadLine());
-            Console.Write("\nВведите год: ");
-            boxOfBooks.ShowBooksByYearOfPublication(Convert.ToInt32(Console.ReadLine()));
+            boxOfBooks.ShowBooksByYearOfPublication(ReadNumber("Введите год: "));
 
             Console.WriteLine("\nСупер, теперь все готово!");
+        }
+
+        private static int ReadNumber(string message)
+        {
+            int number;
+            bool isNumberParsed;
+
+            do
+            {
+                Console.Write(message);
+                isNumberParsed = Int32.TryParse(Console.ReadLine(), out number);
+                
+                if (!isNumberParsed)
+                {
+                    Console.WriteLine("Вы ввели некорректное число. Попробуйте снова!");
+                }
+            } while (!isNumberParsed);
+
+            return number;
         }
     }
 
