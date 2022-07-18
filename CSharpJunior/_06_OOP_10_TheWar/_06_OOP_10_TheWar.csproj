@@ -3,6 +3,7 @@
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net5.0</TargetFramework>
+        <RootNamespace>_06_OOP_08_TheWar</RootNamespace>
     </PropertyGroup>
 
 </Project>

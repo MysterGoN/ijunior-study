@@ -86,21 +86,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_06_OOP_02_WorkingWithPrope
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_06_OOP_03_GamersDatabase", "_06_OOP_03_GamersDatabase\_06_OOP_03_GamersDatabase.csproj", "{63F05233-BDDF-4642-ABFD-1A0DA8FAD90F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_06_OOP_04_Store", "_06_OOP_04_Store\_06_OOP_04_Store.csproj", "{BADF1FFD-15F9-47DE-B204-54F502D3DEEF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_06_OOP_06_Store", "_06_OOP_06_Store\_06_OOP_06_Store.csproj", "{BADF1FFD-15F9-47DE-B204-54F502D3DEEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_06_OOP_05_PassengerTrainConfigurator", "_06_OOP_05_PassengerTrainConfigurator\_06_OOP_05_PassengerTrainConfigurator.csproj", "{04723D5F-3E04-47DD-B0BD-02B460D02D62}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_06_OOP_07_PassengerTrainConfigurator", "_06_OOP_07_PassengerTrainConfigurator\_06_OOP_07_PassengerTrainConfigurator.csproj", "{04723D5F-3E04-47DD-B0BD-02B460D02D62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_06_OOP_06_GladiatorFights", "_06_OOP_06_GladiatorFights\_06_OOP_06_GladiatorFights.csproj", "{96142D34-0CEA-4E9A-B862-539767C01ADE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_06_OOP_08_GladiatorFights", "_06_OOP_08_GladiatorFights\_06_OOP_08_GladiatorFights.csproj", "{96142D34-0CEA-4E9A-B862-539767C01ADE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_06_OOP_07_Supermarket", "_06_OOP_07_Supermarket\_06_OOP_07_Supermarket.csproj", "{96F4CFEC-535C-4064-BBA2-3A0D2626FF9D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_06_OOP_09_Supermarket", "_06_OOP_09_Supermarket\_06_OOP_09_Supermarket.csproj", "{96F4CFEC-535C-4064-BBA2-3A0D2626FF9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_06_OOP_08_TheWar", "_06_OOP_08_TheWar\_06_OOP_08_TheWar.csproj", "{12334D8B-62C3-4A59-82EE-7B8D35D358A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_06_OOP_10_TheWar", "_06_OOP_10_TheWar\_06_OOP_10_TheWar.csproj", "{12334D8B-62C3-4A59-82EE-7B8D35D358A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_06_OOP_09_Aquarium", "_06_OOP_09_Aquarium\_06_OOP_09_Aquarium.csproj", "{944A8850-4503-4B00-86A2-93FEF2D60068}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_06_OOP_11_Aquarium", "_06_OOP_11_Aquarium\_06_OOP_11_Aquarium.csproj", "{944A8850-4503-4B00-86A2-93FEF2D60068}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_06_OOP_10_Zoo", "_06_OOP_10_Zoo\_06_OOP_10_Zoo.csproj", "{04E5F118-90AF-467E-9369-DD9DFE5D556A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_06_OOP_12_Zoo", "_06_OOP_12_Zoo\_06_OOP_12_Zoo.csproj", "{04E5F118-90AF-467E-9369-DD9DFE5D556A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_06_OOP_11_CarService", "_06_OOP_11_CarService\_06_OOP_11_CarService.csproj", "{CF199837-ADBC-48FE-9037-8A3A05271A04}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_06_OOP_13_CarService", "_06_OOP_13_CarService\_06_OOP_13_CarService.csproj", "{CF199837-ADBC-48FE-9037-8A3A05271A04}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_BasicsOfProgramming_05_SwitchValues", "_01_BasicsOfProgramming_05_SwitchValues\_01_BasicsOfProgramming_05_SwitchValues.csproj", "{D175D320-5A66-4A79-B991-893F92527A7E}"
 EndProject
