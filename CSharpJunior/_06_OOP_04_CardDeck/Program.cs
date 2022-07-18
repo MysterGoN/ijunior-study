@@ -31,6 +31,7 @@ namespace _06_OOP_04_CardDeck
             while (numberOfCardsToDeal > 0)
             {
                 numberOfCardsToDeal--;
+
                 foreach (Player player in players)
                 {
                     player.TakeCard(deck);
@@ -83,6 +84,7 @@ namespace _06_OOP_04_CardDeck
             get
             {
                 char suitSymbol;
+
                 switch (Suit)
                 {
                     case CardSuit.Diamonds:
@@ -114,6 +116,7 @@ namespace _06_OOP_04_CardDeck
             get
             {
                 string valueSymbol;
+
                 switch (Value)
                 {
                     case CardValue.Ace:
@@ -154,21 +157,17 @@ namespace _06_OOP_04_CardDeck
             }
         }
 
-        /// <summary>
-        /// Для тасования используется алгоритм Саттоло
-        /// i и j используется для обозначения номеров элементов которые поменяются местами
-        /// </summary>
-        /// <param name="random"></param>
         public void Shuffle(Random random)
         {
             List<Card> cards = _cards.ToList();
             _cards.Clear();
-            int i = cards.Count;
-            while (i > 1)
+            int cardNumber = cards.Count;
+
+            while (cardNumber > 1)
             {
-                i--;
-                int j = random.Next(i + 1);
-                (cards[j], cards[i]) = (cards[i], cards[j]);
+                cardNumber--;
+                int cardNumberToSwitch = random.Next(cardNumber + 1);
+                (cards[cardNumberToSwitch], cards[cardNumber]) = (cards[cardNumber], cards[cardNumberToSwitch]);
             }
 
             foreach (Card card in cards)
