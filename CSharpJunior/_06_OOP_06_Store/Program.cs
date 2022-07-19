@@ -7,10 +7,10 @@ namespace _06_OOP_06_Store
     {
         static void Main(string[] args)
         {
-            const char showSellerItemsCode = '1';
-            const char buyItemCode = '2';
-            const char showYourItemsCode = '3';
-            const char exitMenuCode = '0';
+            const char CodeShowSellerItems = '1';
+            const char CodeBuyItem = '2';
+            const char CodeShowYourItems = '3';
+            const char CodeExitMenu = '0';
 
             Seller seller = new Seller(200);
             Player player = new Player("Nick", 100);
@@ -21,10 +21,10 @@ namespace _06_OOP_06_Store
             {
                 Console.Clear();
                 Console.WriteLine("Работа с консолью:" +
-                                  $"\n  {showSellerItemsCode} - показать товары продавца" +
-                                  $"\n  {buyItemCode} - купить товар" +
-                                  $"\n  {showYourItemsCode} - посмотреть купленные товары" +
-                                  $"\n  {exitMenuCode} - выход");
+                                  $"\n  {CodeShowSellerItems} - показать товары продавца" +
+                                  $"\n  {CodeBuyItem} - купить товар" +
+                                  $"\n  {CodeShowYourItems} - посмотреть купленные товары" +
+                                  $"\n  {CodeExitMenu} - выход");
 
                 Console.Write("\nВведите команду: ");
 
@@ -33,30 +33,19 @@ namespace _06_OOP_06_Store
 
                 switch (userInputCode)
                 {
-                    case showSellerItemsCode:
+                    case CodeShowSellerItems:
                         seller.ShowItems();
                         break;
 
-                    case buyItemCode:
-                        seller.ShowItems();
-                        Console.Write("\nВведите номер товара для покупки: ");
-
-                        if (Int32.TryParse(Console.ReadLine(), out int itemId))
-                        {
-                            seller.SellItem(itemId, player);
-                        }
-                        else
-                        {
-                            Console.WriteLine("Необходимо ввести число!");
-                        }
-
+                    case CodeBuyItem:
+                        seller.SellItem(player);
                         break;
 
-                    case showYourItemsCode:
+                    case CodeShowYourItems:
                         player.ShowItems();
                         break;
 
-                    case exitMenuCode:
+                    case CodeExitMenu:
                         canExit = true;
                         break;
 
@@ -73,36 +62,39 @@ namespace _06_OOP_06_Store
 
     class Item
     {
-        private int _price;
-
         public Item(string name, int price)
         {
             Name = name;
-            _price = price;
+            Price = price;
         }
 
         public string Name { get; private set; }
 
-        public int Cost
-        {
-            get { return _price; }
-        }
+        public int Price { get; private set; }
 
-        public string Info
+        public string Info => $"{Name} ({Price})";
+    }
+
+    abstract class Person
+    {
+        protected int Money;
+        protected List<Item> Items;
+
+        public void ShowItems()
         {
-            get { return $"{Name} ({Cost})"; }
+            for (int i = 0; i < Items.Count; i++)
+            {
+                Console.WriteLine($"{i} - {Items[i].Info}");
+            }
         }
     }
 
-    class Seller
+    class Seller : Person
     {
-        private int _money;
-        private List<Item> _items;
-
         public Seller(int money)
         {
-            _money = money;
-            _items = new List<Item>()
+            Money = money;
+            Items = new List<Item>()
             {
                 new Item("Картоха", 10),
                 new Item("Золотой слиток", 1000),
@@ -112,70 +104,62 @@ namespace _06_OOP_06_Store
             };
         }
 
-        public void ShowItems()
+        public void SellItem(Player player)
         {
-            for (int i = 0; i < _items.Count; i++)
-            {
-                Console.WriteLine($"{i} - {_items[i].Info}");
-            }
-        }
+            ShowItems();
+            Console.Write("\nВведите номер товара для покупки: ");
 
-        public void SellItem(int itemId, Player player)
-        {
-            if (itemId < 0 || itemId > _items.Count - 1)
+            if (int.TryParse(Console.ReadLine(), out int itemId))
             {
-                Console.WriteLine($"Товара под номером {itemId} нет.");
-                return;
-            }
+                if (itemId < 0 || itemId > Items.Count - 1)
+                {
+                    Console.WriteLine($"Товара под номером {itemId} нет.");
+                    return;
+                }
 
-            Item itemForSale = _items[itemId];
+                Item itemForSale = Items[itemId];
 
-            if (player.CheckSolvency(itemForSale))
-            {
-                _money += player.PayForItem(itemForSale);
-                _items.RemoveAt(itemId);
+                if (player.CheckSolvency(itemForSale))
+                {
+                    Money += player.BuyItem(itemForSale);
+                    Items.RemoveAt(itemId);
+                }
+                else
+                {
+                    Console.WriteLine($"Игроку {player.Name} не хватает денег чтобы заплатить.");
+                }
             }
             else
             {
-                Console.WriteLine($"Игроку {player.Name} не хватает денег чтобы заплатить.");
+                Console.WriteLine("Необходимо ввести число!");
             }
         }
     }
 
-    class Player
+    class Player : Person
     {
-        private int _money;
-        private List<Item> _items = new List<Item>();
-
         public Player(string name, int money)
         {
             Name = name;
-            _money = money;
+            Money = money;
+            Items = new List<Item>();
         }
 
         public string Name { get; private set; }
 
         public bool CheckSolvency(Item item)
         {
-            return _money >= item.Cost;
+            return Money >= item.Price;
         }
 
-        public int PayForItem(Item item)
+        public int BuyItem(Item item)
         {
-            _money -= item.Cost;
-            _items.Add(item);
+            Money -= item.Price;
+            Items.Add(item);
 
-            Console.WriteLine($"Игрок {Name} купил \"{item.Name}\" за {item.Cost} и осталось {_money}.");
+            Console.WriteLine($"Игрок {Name} купил \"{item.Name}\" за {item.Price} и осталось {Money}.");
 
-            return item.Cost;
-        }
-
-        public void ShowItems()
-        {
-            foreach (Item item in _items)
-            {
-                Console.WriteLine(item.Info);
-            }
+            return item.Price;
         }
     }
 }
