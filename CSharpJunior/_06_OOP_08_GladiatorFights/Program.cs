@@ -16,6 +16,9 @@ namespace _06_OOP_08_GladiatorFights
 
             Console.WriteLine("\nПриготовтесь битва начинается!");
             arena.DoFight();
+
+            Console.WriteLine("\nЭто было невероятно! Давайте же узнаем с каким результатом все закончилось!");
+            arena.ShowWinner();
         }
     }
 
@@ -404,7 +407,8 @@ namespace _06_OOP_08_GladiatorFights
                 return;
             }
 
-            Console.Clear();
+            Console.WriteLine($"Начинается бой между {_leftFighter.Name} и {_rightFighter.Name}:");
+
             while (_leftFighter.IsAlive & _rightFighter.IsAlive)
             {
                 int leftFighterDamage = _leftFighter.Attack();
@@ -414,7 +418,16 @@ namespace _06_OOP_08_GladiatorFights
                 _leftFighter.TakeDamage(rightFighterDamage);
             }
 
-            if (_leftFighter.IsAlive)
+            Console.WriteLine("Бой завершился!");
+        }
+
+        public void ShowWinner()
+        {
+            if (_leftFighter == null || _rightFighter == null || _leftFighter.IsAlive & _rightFighter.IsAlive)
+            {
+                Console.WriteLine("Боя среди бойцов не было.");
+            }
+            else if (_leftFighter.IsAlive)
             {
                 Console.WriteLine($"В тяжелейшей борьбе победил {_leftFighter.Name}!");
             }
