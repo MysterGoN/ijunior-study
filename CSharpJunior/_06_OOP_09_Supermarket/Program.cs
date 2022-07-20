@@ -102,13 +102,13 @@ namespace _06_OOP_09_Supermarket
 
     class Supermarket
     {
-        private readonly List<string> _productNames = new List<string>()
-            {"Картоха", "Капуста", "Баклажан", "Йогурт", "Яйца", "Сосиски", "Ветчина"};
-
         private const int StartingCustomersCount = 10;
 
+        private readonly List<string> _productNames = new List<string>()
+            {"Картоха", "Капуста", "Баклажан", "Йогурт", "Яйца", "Сосиски", "Ветчина"};
+        
         private Random _random;
-
+        
         private bool _isOpen;
         private int _money;
         private Queue<Customer> _customers;
@@ -128,7 +128,7 @@ namespace _06_OOP_09_Supermarket
 
         public void Work()
         {
-            if (!_isOpen)
+            if (_isOpen == false)
             {
                 Console.WriteLine("Супермаркет закрыт!");
                 return;
@@ -163,7 +163,7 @@ namespace _06_OOP_09_Supermarket
 
             bool isPurchasingEnd = false;
 
-            while (!isPurchasingEnd)
+            while (isPurchasingEnd == false)
             {
                 if (customer.HaveEnoughMoneyToPay())
                 {
